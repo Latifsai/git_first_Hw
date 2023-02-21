@@ -1,0 +1,43 @@
+
+
+ 1. Как скопировать на свой компьютер репозиторий из github.com, что должно быть сделано предварительно?
+    cd gitWork/
+    ls
+    git clone git@github.com:Latifsai/Java_hW8_Bancomat-.git 
+  
+  
+  
+ 2. Как создать git репозиторий из локального каталога на своем компьютере. Как его отправить на github.com?
+    cd IdeaProjects/
+    ls 
+    cd Lesson7
+    ls -al
+    git init 
+    git add .
+    git status 
+    git commit -m "Add some new file s about Java"
+    git remote add origin git@github.com:Latifsai/01-081122-e-be.git
+    git branch -M main
+    git push -u origin main
+  
+  
+ 3. Как получить на локальный компьютер изменения с github.com
+    git pull
+  
+  
+  Какую информацию нам дают команда :
+    git status = показывает в касом сотоянии находся файлы при заливке нa GitHub
+    
+    На ветке master
+    Еще нет коммитов
+
+
+    git log
+    
+    
+    git remote -v = показывает связь между локальным репозиторрием и репозиторием на гитхабе 
+    origin	git@github.com:Latifsai/01-081122-e-be.git (fetch)
+    origin	git@github.com:Latifsai/01-081122-e-be.git (push)
+
+  
+  
